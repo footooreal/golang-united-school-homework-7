@@ -112,14 +112,5 @@ func TestPeople_Less(t *testing.T) {
 	}
 }
 
-func TestPeople_Swap(t *testing.T) {
-
-	t1 := People([]Person{{"A", "A", time.Now()}, {"A", "B", time.Now()}})
-	t2 := People([]Person{{"A", "B", time.Now()}, {"A", "A", time.Now()}})
-
-	t1.Swap(0, 1)
-
-	assert.Equal(t, t1, t2, "should be equal")
-}
 
 /////////////////// matrix ///////
